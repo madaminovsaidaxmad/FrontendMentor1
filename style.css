@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Fraunces";
+    box-sizing: border-box;
+}
+:root {
+    --very-dark-blue: hsl(212, 21%, 14%);
+--dark-grayish-blue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+--dark-cyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    width: 100%;
+}
+.box{
+    min-width: 600px;
+    width: 30%;
+    margin: 0 auto; 
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+
+}
+.left {
+    width: 50%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 35px 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.preview{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+h1{
+    font-size: 36px;
+    color: hsl(212, 21%, 14%);
+}
+.botom{
+    width: 80%;
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: "Poppins";
+}
+.narx{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.narx1{
+    font-size: 36px;
+    color: hsl(228, 12%, 48%);
+}
+.narx2{
+    font-size: 14px;
+    color: hsl(212, 21%, 14%);
+    text-decoration: line-through;
+}
+button{
+    width: 100%;
+    padding: 17px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    border-radius: 7px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    cursor: pointer;
+}
+button img{
+    margin-right: 7px;
+}
+@media (min-width: 576px) {
+    .box {
+        width: 520px;
+    }
+}
